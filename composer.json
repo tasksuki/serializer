@@ -1,0 +1,37 @@
+{
+    "name": "tasksuki/serializer",
+    "type": "library",
+    "description": "Tasksuki Serializer Component",
+    "keywords": ["serializer", "tasksuki"],
+    "homepage": "https://tasksuki.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aurimas Niekis",
+            "email": "aurimas@niekis.lt"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "tasksuki/message": "^1.0@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": { "Tasksuki\\Component\\Serializer\\": "src" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Tasksuki\\Component\\Serializer\\Test\\": "tests" }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-ci": "vendor/bin/phpunit -c phpunit.xml.ci"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
